@@ -1,4 +1,4 @@
-﻿CMS Cours 3
+﻿jeCMS Cours 3
 
 Création du répertoire "sites"
 on se place dans /home/
