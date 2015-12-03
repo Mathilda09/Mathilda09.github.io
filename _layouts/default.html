@@ -1,21 +1,22 @@
 <html>
 	<head>
 		<title>Titre du site</title>
-		
+
 	</head>
 
 
 
 	<body>
-		<header>
+		<!--<header>
 		<h1>{{page.titre}} </h1>
 		<p>{{site.description}}<p>
-		</header>
+		</header>-->
+		{% include header.html %}
 		<main>
 		<p>{{site.p}}</p>
 		{{content}}		</main>
 		<footer>
-		{{site.footer}}
+		{% include footer.html %}
 		<footer>
 	</body>
 </html>
