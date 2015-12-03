@@ -16,16 +16,17 @@
 		<p>{{site.p}}</p>
 		<ul>
 		{% for post in site.posts %}
-		{% if post.categories == "mode" %}
+		
 			<li>
    			<a href="{{ post.url }}">{{ post.title }}</a>
 			{{ post.auteur }}
 			{{ post.date }}
+			{{ post.categories.mode }}
 
 			</li>
 		
       			{{ post.excerpt }}
-		{% endif %}
+		
     		{% endfor %}
 		</ul>		
 		</main>
