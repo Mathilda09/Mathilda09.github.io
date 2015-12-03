@@ -14,11 +14,14 @@
 		{% include header.html %}
 		<main>
 		<p>{{site.p}}</p>
-
+		<ul>
 		{% for post in site.posts %}
-   			<a href="{{ post.url }}">{{ post.billet }}</a>
+			<li>
+   			<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
       			{{ post.excerpt }}
-    		{% endfor %}		
+    		{% endfor %}
+		</ul>		
 		</main>
 		<footer>
 		{% include footer.html %}
