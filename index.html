@@ -66,8 +66,7 @@ title: Titre du site
                 </ul>
             </div> 
             <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+       </div>
     </nav>
     </br>
 <!-- Projects Row -->
@@ -75,11 +74,11 @@ title: Titre du site
         <div class="row">
 	
 		{% for post in site.posts limit:3 %}
-			<ul>
-				<li>
+			
+				
    			
 			 		<div class="col-md-4 img-portfolio">
-                			<a href="detail.html">
+                			<a href="{{ post.url }}">
                     			<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
                 			</a>
                 			<h3>
@@ -89,9 +88,9 @@ title: Titre du site
             				</div>
 					{{ post.auteur }}
 					{{ post.date }}
-					</li>
+				
       					{{ post.excerpt }}
-			</ul>
+			
     		{% endfor %}
 		
            
